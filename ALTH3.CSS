@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    background-color: blueviolet;
+}
+button{
+    background-color: red;
+  margin-left: 550px;
+  margin-top: 30px;
+}
+
+.op{
+    background-color: transparent;
+    height: 150px;
+    width: 150px;
+margin-top: 50px;
+ border-radius: 130px;
+border: 15px solid;
+  border-color: rgb(0, 0, 0);
+  border-top-color: aliceblue;
+  
+
+   margin-left: 550px;
+   animation: animA 1s linear infinite;
+   
+}
+
+@keyframes animA{
+    0%{
+transform: rotate(360deg);
+    }
+    50%{
+        rotate(110deg);
+    }
+100%{
+      rotate(360deg);  
+    }
+
+}

@@ -1,0 +1,21 @@
+body{
+    background-color: aqua;
+
+
+}
+
+form{
+    height: 260px;
+    width: 340px;
+    background-color: bisque;
+    margin-left: 489px;
+    margin-top: 240px;
+}
+div{
+    margin-top: 20px;
+    margin-left: 12px;
+}
+input{
+    margin-left: 25px;
+
+}
