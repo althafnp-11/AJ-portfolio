@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Althaf NP - Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Header Section */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://via.placeholder.com/1920x1080?text=Background+Image') no-repeat center/cover;
+            opacity: 0.3;
+            z-index: -1;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            animation: slideInFromLeft 1s ease-out;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin: 10px 0;
+            animation: slideInFromRight 1s ease-out;
+        }
+
+        .cta-button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: #ff6b6b;
+            border: none;
+            border-radius: 50px;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.5);
+            animation: pulse 2s infinite;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.1);
+            background-color: #ff4757;
+            box-shadow: 0 6px 20px rgba(255, 71, 87, 0.7);
+        }
+
+        /* About Section */
+        #about {
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            text-align: center;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        #about p {
+            max-width: 800px;
+            margin: 20px auto;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Skills Section */
+        #skills {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .skill-card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Projects Section */
+        #projects {
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .project-link {
+            color: #ff6b6b;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .project-link:hover {
+            color: #ff4757;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInFromLeft {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes slideInFromRight {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 { font-size: 3rem; }
+            h2 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Muhammed Althaf NP</h1>
+        <h2>AJ - Poster Designer, Logo Designer & Web Designer</h2>
+        <button class="cta-button" onclick="window.location.href='#projects';">Explore My Work</button>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Muhammed Althaf NP, also known as AJ, a passionate designer specializing in posters, logos, and web design. With a keen eye for aesthetics and functionality, I create visually stunning and user-friendly designs that captivate and engage. Let's bring your ideas to life!</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Poster Design</h3>
+                <p>Creating eye-catching posters with Adobe Photoshop and Illustrator.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Logo Design</h3>
+                <p>Designing memorable logos that represent brand identity.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Web Design</h3>
+                <p>Building responsive websites with HTML, CSS, and JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Check out some of my recent work. <a href="https://example.com/projects" class="project-link">View Full Portfolio</a></p>
+        <!-- Add placeholders for project images or descriptions -->
+        <div class="skills-grid"> <!-- Reusing grid for projects -->
+            <div class="skill-card">
+                <h3>Poster Project 1</h3>
+                <p>A vibrant poster for a music festival.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Logo Project 1</h3>
+                <p>Custom logo for a tech startup.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Web Project 1</h3>
+                <p>Responsive e-commerce website.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: your.email@example.com | Phone: +123-456-7890</p>
+        <p>Let's collaborate on your next project!</p>
+    </section>
+
+    <script>
+        // Simple JS for smooth scrolling (if needed)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
